@@ -1,0 +1,111 @@
+{
+  "projectType": "saas",
+  "projectName": "Bluplai",
+  "projectDescription": "Bluplai is a customer success platform that helps teams manage accounts, track engagement, plan initiatives, and measure ROI across the full customer lifecycle.",
+  "theme": "almond",
+  "primaryColor": "#2d68e7",
+  "lightColor": "#94b4f4",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Platform",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "demo-mode"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/accounts",
+              "concepts/projects",
+              "concepts/lifecycle",
+              "concepts/stakeholders"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/discovery",
+              "features/qualify",
+              "features/success-plans",
+              "features/pulse",
+              "features/adoption",
+              "features/workflows",
+              "features/events"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "analytics/dashboard",
+              "analytics/org-insights",
+              "analytics/activity"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "admin/organization",
+              "admin/team-members",
+              "admin/roles-permissions"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "admin/modules",
+              "admin/integrations",
+              "admin/templates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-tenant organization management with role-based access control",
+    "Customer account tracking with lifecycle stages and health scores",
+    "Project management with initiatives, milestones, and action items",
+    "Customer Success Plans (CSP) with Kanban and Gantt timeline views",
+    "Pulse hub for interviews, surveys, and satisfaction tracking",
+    "Adoption tracking with module-level usage metrics",
+    "Visual workflow builder for customer process mapping",
+    "ROI and value tracking with business outcome drivers",
+    "Stakeholder maps with influence and opportunity views",
+    "Analytics dashboard with activity trends and engagement charts",
+    "Discovery module for capturing customer goals, challenges, and workshops",
+    "Events management with registrations"
+  ],
+  "publicApiSurface": [
+    "GET /accounts — list customer accounts",
+    "POST /accounts — create a customer account",
+    "GET /accounts/:id — account detail with projects and stakeholders",
+    "GET /projects — list projects by lifecycle stage",
+    "POST /projects — create a project",
+    "GET /projects/:id — project detail with initiatives",
+    "GET /projects/:id/csp — customer success plan",
+    "GET /pulse — interviews, surveys, and satisfaction overview",
+    "GET /surveys/:id — survey detail and responses",
+    "GET /questionnaires/:id — interview questionnaire detail",
+    "GET /events — events list",
+    "GET /adoption — module adoption metrics",
+    "GET /analytics — org-level analytics and charts",
+    "GET /drivers — business drivers, outcomes, and value (ROI)",
+    "GET /discovery — discovery notes, goals, and challenges per project",
+    "GET /stakeholders — stakeholder list and relationship data",
+    "GET /stakeholder-maps — stakeholder horizon and opportunity maps",
+    "GET /workflows — visual workflow diagrams",
+    "GET /admin — organization administration panel"
+  ]
+}

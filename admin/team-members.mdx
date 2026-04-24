@@ -1,0 +1,70 @@
+---
+title: "Team members: Invite, manage, and remove access"
+description: "Invite colleagues to your Bluplai organization, track invite status, manage member roles, and remove members who no longer need access."
+---
+
+Team members are the people who belong to your Bluplai organization. As an admin, you control who can join, what role they hold, and which modules they can access. You can invite new members at any time from the Administration page, and you can remove members or update their roles as your team changes.
+
+<Warning>
+  Only users with the **Admin** role can invite new members or remove existing ones. Members cannot manage other members.
+</Warning>
+
+## Inviting a team member
+
+<Steps>
+  <Step title="Open Administration">
+    Navigate to **Admin** in the sidebar. The Administration page opens on the **Users** tab by default.
+  </Step>
+  <Step title="Click Invite Member">
+    Click the **Invite Member** button in the top-right corner of the page.
+  </Step>
+  <Step title="Enter the invite details">
+    Fill in the invitation form:
+
+    - **Email address** — the work email of the person you want to invite.
+    - **Company** — optional, but helps distinguish internal teammates from external partners in the Permissions list.
+    - **Role** — choose **Admin**, **Editor**, or **Viewer**, or select a custom role if your organization has defined any. See [Roles and permissions](/admin/roles-permissions) for a description of each role.
+  </Step>
+  <Step title="Send the invitation">
+    Click **Send Invitation**. Bluplai sends an invitation email to the address you entered. The invitee follows a link in that email to accept the invitation and join your organization.
+  </Step>
+</Steps>
+
+<Note>
+  After accepting an invitation, the new member's account is created and they can sign in immediately. Their module access is determined by the role you assigned and any per-module permissions you configure in the **Permissions** tab.
+</Note>
+
+## Member statuses
+
+Each member in the **Users** tab has a status badge that shows where they are in the onboarding process.
+
+| Status | Meaning |
+|---|---|
+| **Active** | The member has accepted the invitation and can sign in. |
+| **Pending** | The invitation was sent but has not yet been accepted. |
+
+Pending invitations can be cancelled. Open the **Users** tab, find the pending invite, and click the cancel icon next to it.
+
+## Viewing current members
+
+The **Users** tab lists every active member and pending invitation in your organization. For each person you can see their name, email address, company, current role, and status.
+
+You can change a member's role directly from this list using the role dropdown next to their name. The change takes effect immediately.
+
+## Removing a member
+
+<Steps>
+  <Step title="Find the member">
+    Go to **Admin → Users** and locate the member you want to remove.
+  </Step>
+  <Step title="Remove them from the organization">
+    Click the delete icon next to the member's row. A confirmation dialog will appear.
+  </Step>
+  <Step title="Confirm removal">
+    Confirm the action. The member is removed from the organization and loses access immediately. Their data (accounts, projects, notes) remains in the organization and is not deleted.
+  </Step>
+</Steps>
+
+<Warning>
+  Removing a member is immediate. They will not be able to sign in to your Bluplai organization after removal. If you need to restore access, you will need to send a new invitation.
+</Warning>

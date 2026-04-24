@@ -1,0 +1,99 @@
+---
+title: "Roles and permissions: Control what teams can do"
+description: "Understand the three base roles in Bluplai, create custom roles, and control which modules and sections each team member can access."
+---
+
+Bluplai uses a two-layer access model. First, every team member holds a **role** that defines their overall capability level. Second, admins can fine-tune access further by toggling individual **module permissions** per user. Together, roles and module permissions give you precise control over what each person on your team can see and do.
+
+<Note>
+  The **Admin** page is only accessible to users with the Admin role. Members with Editor or Viewer roles will not see it in the sidebar.
+</Note>
+
+## Base roles
+
+Bluplai has three built-in roles that always exist. Every team member is assigned one of these, either directly or through a custom role that inherits from one of them.
+
+<CardGroup cols={3}>
+  <Card title="Admin" icon="shield">
+    Full access to all features, modules, and settings. Admins can invite and remove team members, change roles, manage module permissions, and configure organization settings.
+  </Card>
+  <Card title="Editor" icon="pencil">
+    Can view and edit content across the modules they have been granted access to. Editors cannot manage team members, roles, or organization settings.
+  </Card>
+  <Card title="Viewer" icon="eye">
+    Read-only access to the modules they have been granted access to. Viewers cannot create or edit records.
+  </Card>
+</CardGroup>
+
+## Custom roles
+
+In addition to the three base roles, admins can create **custom roles** — named presets that inherit from a base role and carry a default set of module permissions. When you assign a custom role to a new member, their module access is seeded automatically from the preset, saving you from configuring each module one by one.
+
+Common examples: "CSM", "Sales Lead", "Executive Sponsor".
+
+### Creating a custom role
+
+<Steps>
+  <Step title="Go to Admin → Roles">
+    Navigate to **Admin** in the sidebar and click the **Roles** tab.
+  </Step>
+  <Step title="Click New role">
+    Click the **New role** button in the Custom roles section.
+  </Step>
+  <Step title="Configure the role">
+    Give the role a name and description, choose which base role it inherits from, and set its default module and section permissions.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The new custom role is now available in the invite dialog and the role selector on the Users tab.
+  </Step>
+</Steps>
+
+<Tip>
+  Custom role permissions are applied when the role is first assigned to a user. Changing the custom role definition later does not automatically update existing users — you would need to reassign them to the updated role.
+</Tip>
+
+## Changing a member's role
+
+<Steps>
+  <Step title="Go to Admin → Users">
+    Navigate to **Admin** and open the **Users** tab.
+  </Step>
+  <Step title="Find the member">
+    Locate the team member whose role you want to change.
+  </Step>
+  <Step title="Update the role">
+    Use the role dropdown next to the member's name to select a new base role or custom role. The change takes effect immediately.
+  </Step>
+</Steps>
+
+<Warning>
+  Changing a member's role from Admin to Editor or Viewer immediately removes their access to the Admin page and all admin-only features.
+</Warning>
+
+## Module permissions
+
+Module permissions let you grant or revoke a team member's access to specific modules — independently of their role. For example, you may have an Editor who should only work in the **Plan** and **Engage** modules, with no access to **Qualify** or **Discover**.
+
+### Managing module permissions
+
+<Steps>
+  <Step title="Go to Admin → Permissions">
+    Navigate to **Admin** and click the **Permissions** tab. The tab shows a matrix of team members and modules.
+  </Step>
+  <Step title="Find the member">
+    Use the search bar or company filter to locate the member whose permissions you want to adjust.
+  </Step>
+  <Step title="Toggle module access">
+    Click the toggle switch in the column for each module to grant or revoke access. Changes are saved immediately.
+  </Step>
+</Steps>
+
+<Note>
+  Admin users always have access to all modules regardless of what the Permissions tab shows. Module permission toggles apply to Editor and Viewer role members only.
+</Note>
+
+### Section-level permissions
+
+Within each module, you can also control access to individual sections. For example, within the **Home** module you can enable or disable **Analytics**, **Activity Feed**, or **My Tasks** independently. Section toggles appear when you expand a module's permissions for a specific user.
+
+See [Bluplai modules and feature access](/admin/modules) for a full list of modules and their sections.

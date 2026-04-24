@@ -1,0 +1,109 @@
+---
+title: "Customer Success Plans: Structure the work ahead"
+description: "Build structured Customer Success Plans with initiatives, actions, timelines, and risk tracking to guide customers toward their desired outcomes in Bluplai."
+---
+
+A Customer Success Plan (CSP) is a structured, living plan that organizes the work needed to guide a customer toward their desired outcomes. In Bluplai, a CSP is built from **initiatives** — high-level workstreams like "Onboarding" or "Integration" — each containing **actions**, the specific tasks that move the initiative forward. You can view the plan as a list, a Kanban board, or a Gantt timeline, and track risks and governance in dedicated tabs alongside the plan itself.
+
+## Accessing a CSP
+
+You can open a Customer Success Plan in two ways:
+
+- From a **project page** — each project has a link to its CSP directly from the project detail view.
+- From the **sidebar** — the top-level **Plan** entry takes you to the CSP module where you can select any project.
+
+<Note>
+  When you access a CSP from a project page, the project is locked automatically and you cannot switch to a different project from within that view. Use the sidebar entry to navigate across projects.
+</Note>
+
+## Initiatives and actions
+
+<CardGroup cols={2}>
+  <Card title="Initiatives" icon="layers">
+    Initiatives are the high-level themes or workstreams that make up the plan — for example, "Onboarding", "Integration", or "Training". Each initiative has a title, owner, status, progress percentage, optional start and end dates, and an optional budget.
+  </Card>
+  <Card title="Actions" icon="list-check">
+    Actions are the individual tasks within an initiative. Each action has a title, assignee, due date, priority, and status. Actions drive the initiative's progress and are the primary unit of day-to-day work in the plan.
+  </Card>
+</CardGroup>
+
+### Initiative statuses
+
+| Status | Meaning |
+|---|---|
+| Not Started | The initiative has not begun yet |
+| In Progress | Work is actively underway |
+| On Hold | The initiative is paused |
+| Completed | All work for this initiative is done |
+
+### Action priorities
+
+| Priority | Use when |
+|---|---|
+| Low | Nice to have; no impact if delayed |
+| Medium | Standard priority; default for new actions |
+| High | Time-sensitive or business-critical |
+| Critical | Must be resolved immediately |
+
+## Creating an initiative and adding actions
+
+<Steps>
+  <Step title="Open the CSP for your project">
+    Navigate to the CSP module and select the project you want to plan for, or open the CSP directly from the project page.
+  </Step>
+  <Step title="Create an initiative">
+    Click **Add Initiative**. Enter a title, set the owner and dates, choose a status, and optionally set a budget and icon. Click **Save** to create the initiative.
+  </Step>
+  <Step title="Add actions to the initiative">
+    With the initiative visible in the list, click **Add Action** on that initiative row. Fill in the action title, assign an owner, set a due date, and choose a priority and status. Click **Save** to add the action.
+  </Step>
+  <Step title="Track progress">
+    Update action statuses as work progresses. The initiative's progress percentage reflects the completion of its actions and can also be set manually using the progress slider when editing the initiative.
+  </Step>
+</Steps>
+
+## Views
+
+The CSP module offers three views for working with your plan. Switch between them using the view controls at the top of the initiatives section.
+
+<Tabs>
+  <Tab title="List view">
+    The list view shows initiatives in a vertical stack with their actions nested beneath each one. This is the default view and the easiest way to add, edit, and reorder initiatives and actions.
+
+    Use the status filter at the top to narrow the list to initiatives at a specific stage.
+  </Tab>
+  <Tab title="Kanban board">
+    The Kanban board organizes actions into columns by status — **Pending**, **In Progress**, **Completed**, and **Blocked**. Drag and drop actions between columns to update their status.
+
+    The Kanban view is useful for team standups or sprint-style planning where you want to see what is in progress and what is blocked at a glance.
+  </Tab>
+  <Tab title="Timeline">
+    The timeline view renders initiatives and their actions as a Gantt-style chart, plotted against a calendar. Use it to visualize how workstreams overlap, identify scheduling conflicts, and communicate the plan to the customer.
+
+    Initiatives and actions need start and end dates to appear on the timeline.
+  </Tab>
+</Tabs>
+
+## Additional tabs
+
+Beyond the main initiatives view, the CSP module includes two additional tabs.
+
+<AccordionGroup>
+  <Accordion title="Risks">
+    The Risks tab lets you track identified risks for the project — things that could threaten the plan or the customer relationship. For each risk you can record a description, severity level, and mitigation plan. Keeping risks visible in the plan ensures your team can act on them proactively.
+  </Accordion>
+  <Accordion title="Governance">
+    The Governance tab holds stakeholder governance records — decisions made, escalation paths, and the people accountable for key outcomes. Use it to document the governance structure you have agreed on with the customer so that everyone knows how decisions get made.
+  </Accordion>
+</AccordionGroup>
+
+## Milestones and deliverables
+
+Milestones and Deliverables are cross-cutting features that apply across all your projects. Access them from the sidebar rather than from within a specific CSP.
+
+- **Milestones** — key dates or checkpoints tied to a project or initiative, with success criteria and status tracking.
+- **Deliverables** — tangible outputs (documents, presentations, reports) that you produce for the customer, with file upload and PDF export support.
+
+<Tip>
+  When creating an action, you can link it to an existing deliverable. This connects the task-level work in the plan directly to the outputs you are producing for the customer.
+</Tip>

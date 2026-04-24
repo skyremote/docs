@@ -1,0 +1,80 @@
+---
+title: "Adoption: Monitor and improve product usage rates"
+description: "Monitor how broadly customers use each product module by recording active user snapshots and tracking adoption percentages against targets you define."
+---
+
+Adoption tracking lets you measure how deeply a customer is using your product — broken down by module or feature area. For each module you define, you record periodic snapshots of active users versus licensed seats, and the platform calculates the adoption percentage and compares it against your target.
+
+This gives you an at-a-glance view of where customers are fully engaged, where usage is lagging, and where you should focus your customer success effort.
+
+## Key concepts
+
+<AccordionGroup>
+  <Accordion title="Adoption module">
+    A named product area you want to track for a customer — for example, "Reporting", "API Integration", or "Analytics Dashboard". You create one module per product area you care about.
+  </Accordion>
+  <Accordion title="Active users / Total licensed">
+    The core metric. Active users are the people actually using the module; total licensed is the number of seats the customer has purchased. The adoption percentage is `active_users ÷ total_licensed × 100`.
+  </Accordion>
+  <Accordion title="Target %">
+    The adoption goal you set for a module. For example, a target of 80% means you expect 80% of licensed seats to be active. The target appears alongside the current adoption on each module card.
+  </Accordion>
+  <Accordion title="Snapshot">
+    A point-in-time recording of usage numbers. When you click **Record usage** on a module, you enter today's active user count and total licensed seats. The platform stores this snapshot and updates the current adoption percentage.
+  </Accordion>
+  <Accordion title="Overall adoption">
+    An aggregate adoption percentage across all modules for the customer, displayed at the top of the Adoption page.
+  </Accordion>
+</AccordionGroup>
+
+## How to use Adoption tracking
+
+<Steps>
+  <Step title="Navigate to Adoption">
+    Select a customer account, then click **Adoption** in the sidebar. The page shows the overall adoption summary and all existing modules for this customer.
+  </Step>
+  <Step title="Create a module">
+    Click **New Module**. Enter a name (e.g., "Analytics Dashboard"), an optional description, and optionally set a target adoption percentage. Click **Create**.
+  </Step>
+  <Step title="Record a usage snapshot">
+    On a module card, click **Record usage**. Enter the current number of active users and total licensed users, then click **Save**. The adoption percentage updates immediately.
+  </Step>
+  <Step title="Track progress over time">
+    Repeat the snapshot regularly. The module card always shows the most recent snapshot date alongside the current numbers, so you can see when data was last recorded.
+  </Step>
+</Steps>
+
+## Reading the adoption dashboard
+
+The top of the Adoption page shows three summary metrics:
+
+| Metric | Description |
+|--------|-------------|
+| Overall adoption | Aggregate adoption % across all modules |
+| Active users | Total active users summed across all modules |
+| Licensed users | Total licensed seats summed across all modules |
+
+Each module card shows:
+- Current adoption percentage (color-coded)
+- A progress bar toward the target
+- Active users / total licensed users
+- Date of the last snapshot
+- The target percentage if one is set
+
+### Color coding
+
+Adoption percentages are color-coded to help you spot issues quickly:
+
+| Color | Threshold |
+|-------|-----------|
+| Green | 70% or above |
+| Amber | 50%–69% |
+| Red | Below 50% |
+
+<Tip>
+  Record snapshots on a consistent cadence — monthly or quarterly — so you can identify adoption trends and intervene early when a module is underperforming.
+</Tip>
+
+<Warning>
+  Deleting a module permanently removes it and all its usage snapshots. This cannot be undone.
+</Warning>

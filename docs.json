@@ -1,0 +1,83 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Bluplai",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/e52d92fa-26ad-4e4b-a2ff-c0ada2596649.svg",
+  "colors": {
+    "primary": "#2d68e7",
+    "light": "#94b4f4"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/skyremote/bluplai-david"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Platform",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "demo-mode"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/accounts",
+              "concepts/projects",
+              "concepts/lifecycle",
+              "concepts/stakeholders"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/discovery",
+              "features/qualify",
+              "features/success-plans",
+              "features/pulse",
+              "features/adoption",
+              "features/workflows",
+              "features/events"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "analytics/dashboard",
+              "analytics/org-insights",
+              "analytics/activity"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "admin/organization",
+              "admin/team-members",
+              "admin/roles-permissions"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "admin/modules",
+              "admin/integrations",
+              "admin/templates"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
